@@ -18,6 +18,6 @@ int main(int argc, char** argv) {
       ary[k] = tem;
     }
     clock_gettime(CLOCK_REALTIME, &end);
-    printf("%d %lld\n", size, (long long)(end.tv_nsec - start.tv_nsec));
+    printf("%d %lu\n", size, (end.tv_nsec - start.tv_nsec));
     return 0;
 }

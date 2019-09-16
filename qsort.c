@@ -16,6 +16,6 @@ int main(int argc, char** argv) {
     clock_gettime(CLOCK_REALTIME, &start);
     qsort(ary, size, sizeof(ary[0]), cmp); 
     clock_gettime(CLOCK_REALTIME, &end);
-    printf("%d %lld\n", size, (long long)(end.tv_nsec - start.tv_nsec));
+    printf("%d %lu\n", size, (end.tv_nsec - start.tv_nsec));
     return 0;
 }
